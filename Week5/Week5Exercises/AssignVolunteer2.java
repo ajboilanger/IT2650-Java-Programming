@@ -29,6 +29,6 @@ public class AssignVolunteer2
 
         System.out.println("You entered " + donationType);
         System.out.println("This is " + message);
-        System.out.println("The volunteer who will price this item is " + volunteer);
+        System.out.println("The volunteer who will price this item is " + volunteer + ".");
     }
 }
