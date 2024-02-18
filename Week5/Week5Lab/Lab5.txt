@@ -1,0 +1,15 @@
+1. Read chapter 5 in textbook.
+
+When sending in labs, send in all the parts .java and .class files zipped into one folder. Add your name Last_First_ or First_Last_ to the zipped folder.
+
+To turn in for Lab 5 -
+Create a class that holds data about a job applicant.
+    a. Include a name, a phone number, and four boolean fields that represent whether the applicant is skilled in each of the following areas:
+        i. word processing
+        ii. spreadsheets
+        iii. databases
+        iv. graphics
+    b. Include a constructor that accepts values for each of the fields. Also include a get method for each field.
+    c. Create an application that instantiates several job applicant objects and pass each in turn to a boolean method that determines whether each applicant is qualified for the interview.
+    d. In the main() method, display and appropriate method for each applicant. A qualified applicant has at least three of the four skills.
+    e. Save the files as JobApplicant.java and TestJobApplicants.java
