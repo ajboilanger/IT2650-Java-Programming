@@ -1,5 +1,3 @@
-package Week5.Week5Lab;
-
 public class JobApplicant 
 {
     private final int NUM_TRUE;
