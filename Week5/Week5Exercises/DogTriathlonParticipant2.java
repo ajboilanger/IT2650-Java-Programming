@@ -11,7 +11,7 @@ public class DogTriathlonParticipant2
     private boolean doScoresAgree;
 
 
-public DogTriathlonParticipant(String name, int numEvents, int score1, int score2, int score3)
+public DogTriathlonParticipant2(String name, int numEvents, int score1, int score2, int score3)
 {
     this.name = name;
     NUM_EVENTS = numEvents;
