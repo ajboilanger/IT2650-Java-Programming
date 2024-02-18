@@ -1,5 +1,3 @@
-package Week5.Week5Lab;
-
 public class TestJobApplicants 
 {
     public static void main(String[] args)
