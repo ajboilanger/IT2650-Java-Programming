@@ -2,54 +2,66 @@ package Week5.Week5Lab;
 
 public class JobApplicant 
 {
+    private final int NUM_TRUE;
     private String name;
     private String phoneNumber;
-    private boolean wordProcessing;
-    private boolean spreadsheets;
-    private boolean databases;
-    private boolean graphics;
+    private int wordProcessing;
+    private int spreadsheets;
+    private int databases;
+    private int graphics;
     
-    public JobApplicant(String name, String phone, boolean bool1, boolean bool2, boolean bool3, boolean bool4)
+    public JobApplicant(String name, String phone, int int1, int int2, int int3, int int4)
     {
         this.name = name;
         phoneNumber = phone;
-        int totalTrue = 0;
-        
-        if(bool1 != false)
+        int totalNot0 = 0;
+
+        if(int1 != 0)
         {
-            totalTrue = totalTrue + 1;
+            totalNot0 = totalNot0 + 1; 
         }
-        if(bool2 != false)
+        if(int2 != 0)
         {
-            totalTrue = totalTrue + 1;
+            totalNot0 = totalNot0 +1;
         }
-        if(bool3 != false)
+        if(int3 != 0)
         {
-            totalTrue = totalTrue + 1;
+            totalNot0 = totalNot0 + 1; 
         }
-        if(bool4 != false)
+        if(int4 != 0)
         {
-            totalTrue = totalTrue + 1;
+            totalNot0 = totalNot0 +1;
         }
 
+        NUM_TRUE = totalNot0;
 
-
-
-        wordProcessing = bool1;
-        spreadsheets = bool2;
-        databases = bool3;
-        graphics = bool4;
+        wordProcessing = int1;
+        spreadsheets = int2;
+        databases = int3;
+        graphics = int4;
     }
 
-    public void display()
+    public void display() 
     {
-        if(totalTrue >= 3)
+        if(NUM_TRUE >= 3)
         {
-            System.out.println(name + " has qualifications in " + totalTrue + " of 4 areas, and qualifies for the interview.");
+            System.out.println(name + " qualifies for the interivew, with " + NUM_TRUE + " out of 4 qualifications. Their phone number is " + phoneNumber + " and they have qualifications in the following areas:" );
+            if (wordProcessing != 0) {
+                System.out.println("- Word Processing");
+            }
+            if (spreadsheets != 0) {
+                System.out.println("- Spreadsheets");
+            }
+            if (databases != 0) {
+                System.out.println("- Databases");
+            }
+            if (graphics != 0) {
+                System.out.println("- Graphics");
+            }
         }
-        else
+        else 
         {
-            System.out.println(name + " has qualifications in " + totalTrue + " of 4 areas, and does not qualify for the interview.");
+            System.out.println(name + " does not qualify for the interview, with " + NUM_TRUE + " out of 4 qualifications.");
         }
     }
 }
